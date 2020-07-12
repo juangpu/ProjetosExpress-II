@@ -1,0 +1,71 @@
+body {
+  padding: 40px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.linksMenu{
+  text-align: center;
+}
+
+nav > .itensMenu {
+  display: inline-block;
+}
+
+nav > .itensMenu > li {
+  display: inline-block;
+}
+
+.menu {
+  width: 100%;
+  border: solid 3px;
+  padding: 5px;
+  margin: 3px;
+}
+
+nav .itensMenu li a {
+  font-size: 18px;
+  color: rgb(27, 25, 25);
+  padding: 10px 20px;
+  margin-right: 5px;
+}
+
+nav .itensMenu li a:hover {
+  box-shadow: inset 0 0 0 2px rgb(19, 17, 17);
+}
+
+.texto {
+  width: 100%;
+  border: solid 3px;
+  padding: 5px;
+  margin: 3px;
+}
+
+.titulo {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.The100 {
+  text-align: center;
+  display: inline;
+}
+.TheSociety {
+  text-align: center;
+  display: inline;
+}
+.OuterBanks {
+  text-align: center;
+  display: inline;
+}
+
+.rodape {
+  width: 100%;
+  border: solid 3px;
+  padding: 5px;
+  margin: 3px;
+  text-align: center;
+}
