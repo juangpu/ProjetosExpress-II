@@ -6,3 +6,19 @@ body {
 a {
   color: #00B7FF;
 }
+
+.container-pai {
+  width: 700px;
+  margin: 20px auto;
+  border: 3px solid rebeccapurple;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.titulo {
+  text-align: center;
+}
