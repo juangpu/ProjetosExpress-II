@@ -27,9 +27,12 @@ app.use('/users', usersRouter);
 app.use('/produtos', produtosRouter);
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  next(createError(404));
-});
+// app.use(function(req, res, next) {
+//   next(createError(404));
+// });
+app.use((req, res)=> {
+  res.status(404).render('not-found')
+})
 
 // error handler
 app.use(function(err, req, res, next) {
