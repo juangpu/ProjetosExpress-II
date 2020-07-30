@@ -1,12 +1,6 @@
 const controller = {
-    the100: (req, res) => {
-        res.render("The 100")
-    },
-    theSociety: (req, res) => {
-        res.render("The Society")
-    },
-    OuterBanks: (req, res) => {
-        res.render("Outer Banks")
+    series: (req, res) => {
+        res.send("Essa é a pagina de series")
     }
 }
 
