@@ -8,6 +8,17 @@
 <body>
     
     <h1> Cadastro de Usuario </h1>
+
+        <% if(typeof(errors) != "undefined") { %>
+
+            <p style="color: red"> ERROR </p>   
+            <ul>
+                <% errors.forEach((error)=> { %>
+                    <li> <%= error.msg %> </li>
+                <% }) %>
+            </ul>
+        <% } %>
+
     <form action="/usuarios/criar" method="POST" enctype="multipart/form-data">
         <h3>Nome</h3>
         <input type="text" name="nome" id="">
