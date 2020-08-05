@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const bcrypt = require('bcrypt');
 const {check, validationResult, body} = require('express-validator');
+const session = require('express-session');
 
 let usuarioJSON = path.join("usuarios.json");
 let usuarioController = {
@@ -39,6 +40,8 @@ let usuarioController = {
         if(!bcrypt.compareSync(senha, usuarioSalvo.senha)){
             return res.send('Senha Invalida')
         }
+
+        req.session.usuario = usuarioSalvo;
 
         res.redirect("/");
     }
