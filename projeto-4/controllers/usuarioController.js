@@ -3,6 +3,7 @@ const path = require('path');
 const bcrypt = require('bcrypt');
 const {check, validationResult, body} = require('express-validator');
 const session = require('express-session');
+var cookieParser = require('cookie-parser');
 
 let usuarioJSON = path.join("usuarios.json");
 let usuarioController = {
@@ -42,6 +43,10 @@ let usuarioController = {
         }
 
         req.session.usuario = usuarioSalvo;
+
+        if(logado != undefined){
+            res.cookie('logado', usuarioSalvo.email, {maxAge: 600000})
+        }
 
         res.redirect("/");
     }
